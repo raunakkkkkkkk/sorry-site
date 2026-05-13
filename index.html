@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ffd7e8" />
+  <title>I Am Sorry ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="loader" class="loader">
+    <div class="loader-heart">❤️</div>
+    <p>Gathering courage...</p>
+  </div>
+
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="blob blob-one"></div>
+    <div class="blob blob-two"></div>
+    <div class="blob blob-three"></div>
+    <div id="particles"></div>
+    <div id="floatingHearts"></div>
+  </div>
+
+  <button id="musicToggle" class="music-toggle" type="button" aria-label="Toggle soft background music">
+    <span class="music-icon">♪</span>
+  </button>
+
+  <main class="page-shell">
+    <section class="hero-section min-h-screen flex flex-col items-center justify-center px-5 text-center">
+      <p class="eyebrow reveal-soft">A tiny page for a huge apology</p>
+      <h1 class="hero-title">
+        <span class="hero-line line-one">I know i'm just too dumb...</span>
+        <span class="hero-heart" aria-hidden="true">💗</span>
+        <span class="hero-line line-two">But You Mean just Too Much To Me ,aaaartiiieeee...❤️</span>
+      </h1>
+      <p class="hero-copy reveal-soft">
+        i lubhh uuuu and losing you is the last thing I ever want.
+      </p>
+      <div class="hero-actions reveal-soft">
+        <a href="#start-again" class="primary-btn magnetic-btn">One More Chance?</a>
+        <button id="thinkingBtnHero" class="soft-btn magnetic-btn" type="button">Still Thinking</button>
+      </div>
+      <div class="scroll-cue" aria-hidden="true">
+        <span></span>
+      </div>
+    </section>
+
+    <section class="content-section px-5 py-20" id="special">
+      <div class="section-heading">
+        <p class="eyebrow">Little Things</p>
+        <h2>Reasons Why You're Special</h2>
+      </div>
+      <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
+        <article class="glass-card reason-card">
+          <span class="card-icon">✨</span>
+          <h3>tumahri presence</h3>
+          <p>tumhare sath mujhe sukoon or tension dono hoti hai,sukoon sath hone ka and tension ki dur naa ho jae</p>
+        </article>
+        <article class="glass-card reason-card">
+          <span class="card-icon">🌸</span>
+          <h3>tumm khudd</h3>
+          <p> tum bohtttt hii i meann bohttt hii acchii lagtii hoo meree kooo</p>
+        </article>
+        <article class="glass-card reason-card">
+          <span class="card-icon">🫶</span>
+          <h3>tumhara shyy honaa</h3>
+          <p>haaann mainee tumhee kabhii kabhii hii shyy dekhaa haii isliyeeee , i hopee tum abhii bhii shyy face mai ho .</p>
+        </article>
+        <article class="glass-card reason-card">
+          <span class="card-icon">🌙</span>
+          <h3>and lastly</h3>
+          <p>you makes me dream and grow better for youuuu</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section px-5 py-20" id="promises">
+      <div class="section-heading">
+        <p class="eyebrow">Not just words</p>
+        <h2>Things I Promise</h2>
+      </div>
+      <div class="promise-timeline max-w-3xl mx-auto">
+        <div class="promise-item">
+          <div class="promise-dot">❤️</div>
+          <div class="glass-card">
+            <h3>I will try to listen better</h3>
+            <p>Your feelings deserve my full attention, not excusess T-T.</p>
+          </div>
+        </div>
+        <div class="promise-item">
+          <div class="promise-dot">💌</div>
+          <div class="glass-card">
+            <h3>I will be more careful</h3>
+            <p>I will think before I speak (no attitudeee)</p>
+          </div>
+        </div>
+        <div class="promise-item">
+          <div class="promise-dot">🌷</div>
+          <div class="glass-card">
+            <h3>I will show up consistently</h3>
+            <p>nhii jaungaa byee bokrr pareshann karunga.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section px-5 py-20" id="punishment">
+      <div class="section-heading">
+        <p class="eyebrow">Your decision aartiee</p>
+        <h2>Choose My Punishment😭</h2>
+      </div>
+      <div class="punishment-grid max-w-6xl mx-auto">
+        <button class="glass-card option-card" data-option="Buy You icream 🍦" type="button"><span>🍕</span>Buy You ice creamm</button>
+        <button class="glass-card option-card" data-option="Long Call 📞" type="button"><span>📞</span>Long Call</button>
+        <button class="glass-card option-card" data-option="Movie Date 🎬" type="button"><span>🎬</span>Movie Date</button>
+        <button class="glass-card option-card" data-option="Shopping Trip 🛍️" type="button"><span>🛍️</span>Shopping Trip(zyada paise nhi haiT-T)</button>
+        <button class="glass-card option-card" data-option="a longg huggg ❤️" type="button"><span>💌</span>A long huggg</button>
+        <button class="glass-card option-card" data-option="Surprise Gift 🎁" type="button"><span>🎁</span>Surprise Gift</button>
+      </div>
+      <form id="customPunishmentForm" class="custom-form glass-card max-w-3xl mx-auto mt-6">
+        <label for="customMessage">Or write your own punishment</label>
+        <div class="custom-row">
+          <input id="customMessage" type="text" maxlength="160" placeholder="Example: bring me flowers and boba" />
+          <button class="primary-btn" type="submit">Choose This</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="content-section final-section min-h-screen flex flex-col items-center justify-center px-5 text-center" id="start-again">
+      <div class="glass-card final-card">
+        <p id="quoteRotator" class="quote-rotator">You are my favorite person, even on the hardest days.</p>
+        <h2>Can We Start Again? ❤️</h2>
+        <p>I am sorry. I care about you deeply, and I want to love you better than I did yesterday.</p>
+        <div class="final-actions">
+          <button id="forgiveBtn" class="primary-btn magnetic-btn" type="button">Forgive Me</button>
+          <button id="thinkingBtn" class="soft-btn magnetic-btn" type="button">Still Thinking</button>
+          <button id="chanceBtn" class="outline-btn magnetic-btn" type="button">One More Chance?</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <div id="celebrationModal" class="celebration-modal" aria-hidden="true">
+    <div class="celebration-card glass-card">
+      <button id="closeCelebration" class="close-btn" type="button" aria-label="Close">×</button>
+      <div class="celebration-heart">💖</div>
+      <h2>Deal accepted!</h2>
+      <p id="selectedPunishmentText">Your choice has been safely sent to my heart.</p>
+    </div>
+  </div>
+
+  <div id="forgiveOverlay" class="forgive-overlay" aria-hidden="true">
+    <div id="heartExplosion"></div>
+    <div class="forgive-message">
+      <div class="big-heart">❤️</div>
+      <h2>You Just Made Me The Happiest Person Alive ❤️</h2>
+      <p>I promise I will cherish this chance.</p>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
